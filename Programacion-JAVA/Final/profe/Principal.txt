@@ -1,0 +1,16 @@
+
+import java.util.ArrayList;
+
+import Modelo.ConsultasLibros;
+import Modelo.Libro;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Libro libro = new Libro(22,2,3,123456,100,"el principito");
+		
+		ConsultasLibros consultaslibro = new ConsultasLibros(); //lapiz borrador
+		consultaslibro.insertar(libro);
+	}
+
+}

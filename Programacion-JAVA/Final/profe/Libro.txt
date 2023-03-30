@@ -1,0 +1,76 @@
+package Modelo;
+
+public class Libro {
+	private int idLibro;//null
+	private int idCategoria;
+	private int idAutor;
+	private int codigo;
+	private int cantidad;
+	private String titulo;//null
+
+	
+	public Libro(int idLibro, int idCategoria, int idAutor, int codigo, int cantidad, String titulo) {
+		super();
+		this.idLibro = idLibro;
+		this.idCategoria = idCategoria;
+		this.idAutor = idAutor;
+		this.codigo = codigo;
+		this.cantidad = cantidad;
+		this.titulo = titulo;
+	}
+
+	public Libro() {
+}
+//INSERT INTO usuarios (`idUsuario`, `nombre`, `apellido`, `direccion`, `condicion`) VALUES (?, ?, ?, ?, ?);
+	
+	public int getIdLibro() {
+		return idLibro;
+	}
+
+	public void setIdLibro(int idLibro) {
+		this.idLibro = idLibro;
+	}
+
+	public int getIdCategoria() {
+		return idCategoria;
+	}
+
+	public void setIdCategoria(int idCategoria) {
+		this.idCategoria = idCategoria;
+	}
+
+	public int getIdAutor() {
+		return idAutor;
+	}
+
+	public void setIdAutor(int idAutor) {
+		this.idAutor = idAutor;
+	}
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	
+
+
+}
