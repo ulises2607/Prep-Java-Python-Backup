@@ -1,0 +1,65 @@
+package pruebasSQL;
+
+import java.sql.*;
+
+public class principalTest {
+		
+	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+	static final String DB_URL = "jdbc:mysql://localhost:3306/world";
+	
+	static final String USER = "root";
+	static final String PASS = "";
+	
+
+	public static void main(String[] args) {
+		Connection conn = null;
+		Statement stmt = null;
+		
+		try { //paso 2 registrar JDBC driver
+			Class.forName(JDBC_DRIVER);
+			// paso 3 abrir una conexion
+			System.out.println("Conectando a la base de datos... Abriendo conexion");
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+			System.out.println("Creando statement!...");
+			stmt = conn.createStatement();
+			String sql;
+			sql = "SELECT Name, Code, Population FROM country";
+			ResultSet rs = stmt.executeQuery(sql);
+			//Extraer datos del resultset
+			
+			while(rs.next()) {
+				//Recibir por tipo de columna
+				int poblacionwacha = rs.getInt("Population");
+				
+				//Mostrar valores
+				
+				System.out.println("Poblacion: "+poblacionwacha + " habitantes");
+			}
+			
+		}catch (SQLException se){
+			se.printStackTrace();
+			System.out.println("Problemas con el sql");
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("aca para errores de clas, forname");
+		}finally {
+			try {
+				if(stmt!=null)
+					stmt.close();
+			} catch (SQLException se2) {
+				// Nada que podamos hacer
+			}
+			try {
+				if(conn!=null)
+					conn.close();
+			} catch (SQLException se) {
+				se.printStackTrace();
+			} //Cierre  try
+		} // cierra finally
+		
+			
+		System.out.println("Bueno veamos si llego hasta aca");
+
+		}
+	}

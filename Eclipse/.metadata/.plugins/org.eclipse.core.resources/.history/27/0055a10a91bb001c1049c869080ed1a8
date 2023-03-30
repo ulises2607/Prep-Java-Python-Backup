@@ -1,0 +1,25 @@
+
+public class serie {
+// Agregaremos atributos
+	public String Titulo;
+	public String NumerosdeTemp;
+	public String Genero;
+	public String Creador;
+
+//Procedemos con el Constructor
+	public serie (String p1, String p2, String p3, String p4) {
+		//Asignar valor a los atributos
+		this.Titulo = p1;
+		this.NumerosdeTemp = p2;
+		this.Genero = p3;
+		this.Creador = p4;
+		
+	}
+// QUE HACER CON LA FUNCION
+	public void mostrar() {
+		System.out.println("El titulo de la series es "+this.Titulo);
+		System.out.println("tiene "+this.NumerosdeTemp+" de temporadas");
+		System.out.println("Del genero "+this.Genero);
+		System.out.println("Y su creador es "+this.Creador);
+	}
+}

@@ -1,0 +1,21 @@
+package Actividad1;
+
+public class FuncionCuadratica {
+
+	public static void main(String[] args) {
+	
+	Raices c1 = new Raices(2,4,2);
+	//Analisis unica solucion
+	System.out.println("Tiene unica raiz: "+c1.tieneRaiz());
+	
+	//Analisis 2 raices
+	System.out.println("Tiene 2 raices: "+c1.tieneRaices());
+	
+	
+	System.out.println("El discriminante es: "+c1.getDiscriminante());
+	
+	
+	
+	}
+
+}

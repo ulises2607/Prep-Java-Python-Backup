@@ -1,0 +1,7 @@
+
+public class Auto {
+// atributos / caracteristicas
+	public String color;
+	public String marca;
+	public String año;
+}

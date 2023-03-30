@@ -1,0 +1,77 @@
+package Snake;
+
+import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.Toolkit; // se utilizara para darnos el tamaño de las ventanas
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.Dimension;
+import java.awt.Event; // Interaccion con las teclas
+import java.awt.Graphics;
+import java.awt.Point; // PAra tener el punto en el plano
+import java.awt.Color;
+
+
+
+public class Snake extends JFrame {
+
+	int width = 640;
+	int height = 480;
+	Point snake;
+	int heightPoint = 10;
+	int widthPoint = 10;
+	
+	ImagenSnake imagenSnake;
+	
+	public Snake() {
+		setTitle("Snake");
+		
+		setSize(width, height);
+		
+		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+		this.setLocation(dim.width/2-width/2,dim.height/2-height/2);// con estas dos lineas pondremos el cuadro en el centro de la pantalla
+		
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Agregar que cuando se cierre salga de la app.
+		
+		Teclas teclas = new Teclas();// REconoce teclas
+		this.addKeyListener(teclas);
+		
+		snake = new Point(width/2, height/2);
+		
+		imagenSnake = new ImagenSnake();
+		this.getContentPane().add(imagenSnake);
+		
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+
+Snake s = new Snake();
+
+	}
+	
+	public class ImagenSnake extends JPanel{
+		
+		public void paintComponent(Graphics g) {
+			super.paintComponent(g);
+			
+			g.setColor(0,0,255);
+			g.drawRect(snake.x, snake.y, widthPoint, heightPoint);
+		}
+		
+	}
+	
+	
+	
+	public class Teclas extends KeyAdapter{ //Key adapter es una clase que nos permite evaluar los eventos de cada una de las teclas
+		
+		public void keyPressed(KeyEvent e){
+			
+			if(e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+				System.exit(0);
+			}
+		}
+		
+	}
+
+}

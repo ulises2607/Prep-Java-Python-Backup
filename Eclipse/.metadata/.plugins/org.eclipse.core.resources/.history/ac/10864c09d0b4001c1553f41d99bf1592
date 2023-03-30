@@ -1,0 +1,22 @@
+
+public class ARRAY {
+
+	public static void main(String[] args) {
+		
+
+				
+				String [] diasLaborales = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabados"};
+				
+				for (int i=0 ; i< diasLaborales.length-1; i++) {
+					
+					System.out.println("mostrame algo");
+				}
+				
+				
+				
+			}
+		
+
+
+	}
+

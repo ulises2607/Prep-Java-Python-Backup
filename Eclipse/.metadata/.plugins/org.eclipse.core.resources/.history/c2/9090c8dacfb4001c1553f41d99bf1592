@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ARRAY {
+
+	public static void main(String[] args) {
+		
+				Scanner sc = new Scanner(System.in);
+				
+				String [] diasLaborales = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabados"};
+				
+				for (int i=0 ; i< diasLaborales.length-1; i++) {
+					
+					System.out.println(diasLaborales);
+				}
+				
+				
+				
+			}
+		
+
+
+	}
+

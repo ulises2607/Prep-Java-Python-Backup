@@ -1,0 +1,11 @@
+package Basicos;
+// Eliminar los espacios de una frase pasada por consola por el usuario.
+public class Ejercicio12 {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

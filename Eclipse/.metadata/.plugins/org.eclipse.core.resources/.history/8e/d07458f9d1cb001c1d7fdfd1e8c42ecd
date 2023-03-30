@@ -1,0 +1,27 @@
+package Actividad5;
+import java.util.*;
+public class Ejecutable {
+	public static void main(String []args) {
+	Scanner leer = new Scanner(System.in);
+	
+	boolean salir = false;
+	
+	Contacto c1 = new Contacto("Ulises",123456);
+	Contacto c2 = new Contacto("Barby",456789);
+	Contacto c3 = new Contacto("vieja",1233435);
+	ArrayList <Contacto> a1 = new ArrayList<Contacto>(10);
+	
+	a1.add(c1);
+	a1.add(c2);
+	a1.add(c3);
+	a1.set(4, null);
+	
+	System.out.println("Contacto 1: "+c1.getNombre());
+	
+	System.out.println("Contiene: "+a1.contains(c1));
+	a1.ensureCapacity(1);
+	System.out.println("To array"+a1.toArray());;
+	
+	System.out.println("Size: "+a1.size());
+}
+}

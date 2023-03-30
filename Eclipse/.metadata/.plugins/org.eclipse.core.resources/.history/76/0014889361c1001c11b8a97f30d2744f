@@ -1,0 +1,17 @@
+package Actividad5;
+
+public class MainCuenta {
+
+	public static void main(String[] args) {
+		
+		Cuenta cuenta1 = new Cuenta("Ulises Cappa", "0001",0,5000);
+
+		double s1 = cuenta1.ingresar(1000);
+		
+		System.out.println("nuevo saldo"+s1);
+		for (int i=0;i<4;i++) {
+		System.out.println("la cuenta queda "+cuenta1);
+		}
+	}
+
+}

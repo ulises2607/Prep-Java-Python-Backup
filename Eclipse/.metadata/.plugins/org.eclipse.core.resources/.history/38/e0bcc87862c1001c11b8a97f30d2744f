@@ -1,0 +1,14 @@
+package Actividad5;
+
+public class MainCuenta {
+
+	public static void main(String[] args) {
+		
+		Cuenta cuenta1 = new Cuenta("Ulises Cappa", "0001",0,5000);
+
+		cuenta1.ingresar(5012305);
+		
+		cuenta1.mostrarSaldo();
+	}
+
+}

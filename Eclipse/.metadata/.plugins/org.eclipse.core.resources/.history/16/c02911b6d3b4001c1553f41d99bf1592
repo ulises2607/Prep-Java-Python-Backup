@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class ARRAY2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//Se ingresara el tamaño del vector
+		System.out.println("Ingrese tamaño del vector");
+		int tamañov = sc.nextInt();
+		//INTENTAR ARMAR EL VETOR
+		for (int i=0;i<tamañov;i++) {
+			System.out.println("Ingrese elemento "+(i+1));
+			int elemento = sc.nextInt();
+			int vector []= {elemento};
+			
+			
+		}
+		
+
+	}
+
+}

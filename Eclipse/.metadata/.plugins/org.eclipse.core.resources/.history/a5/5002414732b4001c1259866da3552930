@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Actividad10 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		float base, altura, superficie;
+		System.out.println("Ingrese base del triangulo ");
+		base = sc.nextFloat();
+		System.out.println("Ingrese altura del triangulo: ");
+		altura = sc.nextFloat();
+		System.out.println("Las bases y altura ingresadas respectivamente son: "+base+" y "+altura);
+		
+		superficie = (base*altura)/2;
+		
+		System.out.println("La superficie del triangulo con base y altura elegidos es: "+superficie);
+		
+	}
+
+}

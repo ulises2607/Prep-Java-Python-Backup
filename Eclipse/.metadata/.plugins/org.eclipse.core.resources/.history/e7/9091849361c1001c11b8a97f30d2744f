@@ -1,0 +1,24 @@
+package Actividad5;
+//Procedimiento basico
+public class Cuenta {
+	String nombre_cliente;
+	String numero_cuenta;
+	double tipo_interes;
+	double saldo;
+	public Cuenta(String nombre_cliente, String numero_cuenta, double tipo_interes, double saldo) {
+		this.nombre_cliente = nombre_cliente;
+		this.numero_cuenta = numero_cuenta;
+		this.tipo_interes = tipo_interes;
+		this.saldo = saldo;
+	}
+	
+	public double ingresar(double cantI) {
+		double saldoi = saldo + cantI;
+		return saldoi;
+	}
+	public double reintegrar(double cantRein) {
+		double saldor = saldo + cantRein;
+		return saldor;
+	}
+	
+}

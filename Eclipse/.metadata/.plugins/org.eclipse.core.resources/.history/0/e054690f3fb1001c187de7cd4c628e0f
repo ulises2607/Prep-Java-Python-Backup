@@ -1,0 +1,28 @@
+
+public class Actividad3 {
+	public static void main(String[]args) {
+		
+		int num1 = 2;
+		int num2= 4;
+		int num3=6;
+		
+		if (num1 < num2) {
+			System.out.println("el numero "+num1+" es menor que "+num2);
+		} else {
+			System.out.println("el numero "+num1+" es mayor que el "+num2);
+		}
+		
+		if (num1 < num3) { 
+			System.out.println("el numero "+num1+" es menor que el "+num3);
+		}else {
+			System.out.println("l numero "+num1+" es mayor que el "+num3);
+		}
+		if (num2<num3) {
+			System.out.println("el numero "+num2+"es menor que el "+num3);
+		}else {
+			System.out.println("el numero "+num2+" es mayor que el "+num3);
+		}
+		
+		}
+	}
+}

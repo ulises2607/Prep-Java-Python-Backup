@@ -1,0 +1,27 @@
+package Ejercicio1;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+public class EscribeArray {
+
+	public static void main(String[] args) throws IOException {
+		
+		String c;
+        System.out.print("se lee hasta encontrar el fin de línea: ");
+        InputStreamReader entrada = new InputStreamReader(System.in);
+        BufferedReader teclado = new BufferedReader(entrada);
+        c = teclado.readLine();
+        System.err.println( "Contados "+ c.length() +" bytes en total." );
+	
+        /////////////////////////////////////////
+        
+        ByteArrayInputStream array_1  = new ByteArrayInputStream(System.in);
+        int a;
+        BufferedReader teclado2 = new BufferedReader(array_1);
+        a = teclado2.read();
+
+	}
+
+}

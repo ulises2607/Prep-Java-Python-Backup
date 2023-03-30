@@ -1,0 +1,57 @@
+package practicaboludeando;
+
+public class reloj {
+
+	public static void main(String[] args) throws InterruptedException {
+		int horas=0, minutos=0, segundos=0;
+		boolean salir = false;
+		while(!salir) {
+			
+			//Mostrar
+			
+			if(horas<10) {
+				System.out.print("0");
+			}
+			System.out.print(horas+":");
+			
+			if(minutos<10) {
+				System.out.print("0");
+			}
+			System.out.print(minutos+":");
+			
+			if(segundos<10) {
+				System.out.print("0");
+			}
+			
+			
+			//Aumentar el timepo
+			
+			System.out.println(segundos);
+			segundos++;
+			
+			//comprobar el tiempo
+			
+			if(segundos==60) {
+				segundos = 0;
+				minutos++;
+				if(minutos==60) {
+					minutos=0;
+					horas++;
+					if(horas==24) {
+						horas=0;
+					}
+					
+				}
+			}
+			Thread.sleep(2000);
+			if(segundos==6) {
+				salir= true;
+				System.out.println("Explotar");
+				
+
+				
+			}
+		}
+	}
+
+}

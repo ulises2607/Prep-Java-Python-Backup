@@ -1,0 +1,17 @@
+
+public class Auto {
+// atributos / caracteristicas
+	public String color;
+	public String marca;
+	public int año;
+	
+	//Constructor / metodo o funcion especial--> para asignar valores a los atrib.
+	// Parametros --> Datos de entrada --> son ingredientes.
+	public Auto() {
+		this.color = "rojo";
+		this.marca = "Ford";
+		this.año = 2021;
+	}
+	
+	
+}

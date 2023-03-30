@@ -1,0 +1,15 @@
+package Actividad1;
+
+public class FuncionCuadratica {
+
+	public static void main(String[] args) {
+	
+	Raices c1 = new Raices(2,2,1);
+	
+	c1.tieneRaiz();
+	System.out.println(c1.tieneRaiz());
+	
+	System.out.println("El discriminante es: "+c1.getDiscriminante());
+	}
+
+}

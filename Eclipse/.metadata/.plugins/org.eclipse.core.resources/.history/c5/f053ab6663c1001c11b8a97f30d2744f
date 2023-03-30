@@ -1,0 +1,23 @@
+package Actividad5;
+
+public class MainCuenta {
+
+	public static void main(String[] args) {
+		
+		Cuenta cuenta1 = new Cuenta("Ulises Cappa", "0001",0,5000);
+
+		cuenta1.ingresar(600);
+		
+		cuenta1.mostrarSaldo();
+		
+		cuenta1.reintegrar(3000);
+		
+		cuenta1.mostrarSaldo();
+		
+		Cuenta cuenta2 = new Cuenta("Barby Segura","36803273",0, 3000000);
+		
+		cuenta2.transferencia("0001", 5000);
+		cuenta2.mostrarSaldo();
+	}
+
+}

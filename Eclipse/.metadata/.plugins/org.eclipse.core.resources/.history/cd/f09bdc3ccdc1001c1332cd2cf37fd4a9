@@ -1,0 +1,10 @@
+package Actividad1;
+
+public class FuncionCuadratica {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

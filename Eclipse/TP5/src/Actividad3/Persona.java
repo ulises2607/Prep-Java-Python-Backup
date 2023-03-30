@@ -1,0 +1,44 @@
+package Actividad3;
+
+
+public class Persona {
+// Atributos: nombre apellido dni domicilio
+	//M.A. Modificadores de Acceso ---> public private, public,...
+	public String nombre;
+	public String apellido;
+	public int dni; // 37.106.547 poner que lea solo numeros
+	public String domicilio;
+	
+	// Constructor: Se ejecuta solo, sin llamarlo
+	public Persona(String param1, String param2, int param3, String param4 ) {
+		// Asignar valor a los atributos
+		this.nombre = param1;
+		this.apellido= param2;
+		this.dni= param3;
+		this.domicilio=param4;
+		
+	}
+	 
+	public void mostrar() {
+		System.out.println("El nombre es "+ this.nombre);
+		System.out.println("El apellido es "+ this.apellido);
+		System.out.println("El dni es "+this.dni);
+		System.out.println("El domicilio es "+this.domicilio);
+	}
+public class Empleado extends Persona{
+	private double sueldoT;
+	private int horas;
+	
+	public Empleado(String n, String ap, int d, String dom, double sueldoT) {
+		super(n,ap,d,dom);
+		this.sueldoT = sueldoT;
+	}
+	//Metodo calcular sueldo}
+	public double calculoSueldo(double coph) {
+		
+		sueldoT = horas * coph;
+		return sueldoT;
+	}
+
+}
+}

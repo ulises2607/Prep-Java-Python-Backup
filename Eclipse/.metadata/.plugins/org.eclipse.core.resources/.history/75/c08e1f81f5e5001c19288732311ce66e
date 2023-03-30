@@ -1,0 +1,24 @@
+package Snake;
+
+import javax.swing.JFrame;
+import javax.swing.*;
+
+public class Snake extends JFrame {
+
+	int width;
+	int height;
+	
+	public Snake() {
+		setTitle("Snake");
+		
+		setSize(width, height);
+		
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

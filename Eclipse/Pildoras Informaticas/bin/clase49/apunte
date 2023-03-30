@@ -1,0 +1,7 @@
+Las interfases son un conjunto de directrices que debn cumplir las clases
+
+Solo contienen metodos abstractos y constantes
+
+se almacenan en un ficheros .class
+no se pueden instanciar(no uso de new)
+todos sus metodos son public y abstract. 

@@ -1,0 +1,11 @@
+
+public class CuentaBancaria {
+	 String CBU;
+	 String alias;
+	 double saldo;
+	
+	public void mostrarDatos() {
+		System.out.println(CBU + " "+ alias + " " + saldo);
+	}
+	
+}

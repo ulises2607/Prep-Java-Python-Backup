@@ -1,0 +1,13 @@
+import java.util.*;
+public class Actividad2 {
+
+	public static void main(String[] args) {
+		//LLmar a nuestr clase
+		
+		serie nuevaSerie = new serie("Braking Bad", 5, "Drama", "Vince Gillian");
+		
+		nuevaSerie.mostrar();
+
+	}
+
+}
